@@ -12,12 +12,13 @@ public class Mine{
 	myLamp.turnOn();
 	System.out.println(myLamp.showStatus());
 
-	System.out.println("Lamp is " + myLamp.isOn() 
-	+ " and the color is " + myLamp.getColor()
-	+ " and the wattage is " + myLamp.getWatts());
-	
 	Lamp yourLamp = new Lamp();
 	Yours.print();
+	
+	yourLamp.setColor("red");
+	yourLamp.setWatts(10000);
+	yourLamp.turnOn();
+	System.out.println(yourLamp.showStatus());
 	
 	Lamp otherLamp = new Lamp();
 	Others.print();
