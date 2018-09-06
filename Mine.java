@@ -4,6 +4,10 @@ import lab2.*;
 public class Mine{
 	public static void main (String[] args){
 		
+	StopWatch timer = new StopWatch();	
+	timer.start();
+
+	
 	Lamp myLamp = new Lamp();	
 	System.out.println("This is mine!");
 	
@@ -22,5 +26,8 @@ public class Mine{
 	
 	Lamp otherLamp = new Lamp();
 	Others.print();
+	
+	timer.stop();
+	System.out.println(timer.time());
 	}
 }
